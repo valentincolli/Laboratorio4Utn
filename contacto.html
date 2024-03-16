@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Portfolio de Desarrollo de Software</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Contacto</h1>
+</header>
+
+<nav>
+  <a class="btn btn-outline-success"href="index.html">Home</a>
+  <a class="btn btn-outline-success"href="about.html">About Me</a>
+  <a class="btn btn-outline-success"href="contacto.html">Contact Me</a>
+</nav>
+
+<section id="contact">
+  <h1>Contactame abajo</h1>
+  <form action="enviar.php" method="post">
+    <label for="fname">Nombre:</label><br>
+    <input type="text" id="fname" name="fname" required><br>
+    <label for="lname">Apellido:</label><br>
+    <input type="text" id="lname" name="lname" required><br>
+    <label for="company">Empresa:</label><br>
+    <input type="text" id="company" name="company"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="phone">Teléfono:</label><br>
+    <input type="tel" id="phone" name="phone"><br>
+    <label for="message">Detalle consulta:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+    <button type="submit"class="btn btn-success">Enviar</button>
+    <button type="reset"class="btn btn-warning">Limpiar</button>
+    <br>
+    <br>
+    <p>o por whatsap</p>
+    <button class="btn btn-success" id="boton-whatsapp">WhatsApp</button>
+  </form>
+</section>
+<script src="script.js"></script>
+<script>
+  window.onload = function() {
+      var urlParams = new URLSearchParams(window.location.search);
+      var product = urlParams.get('product');
+      if (product) {
+          document.getElementById("message").value = "Hola quisiera consultar sobre el producto " + product;
+      }
+  }
+</script>
+<footer>
+  <p>&copy; 2024 Portfolio de Vc</p>
+</footer>
+
+</body>
+</html>

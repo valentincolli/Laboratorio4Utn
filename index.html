@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>clase de mariano</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - Kiosquito de Software</title>
+    <!-- Enlace a Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>Hola feos</p>
+
+<header>
+  <h1>Kiosquito de Software</h1>
+</header>
+
+<nav>
+  <a class="btn btn-outline-success"href="index.html">Home</a>
+  <a class="btn btn-outline-success"href="about.html">About Me</a>
+  <a class="btn btn-outline-success"href="contacto.html">Contact Me</a>
+</nav>
+
+<section id="home">
+  <h1>Inicio</h1>
+  <p>Bienvenido a mi despensa. Aquí encontrarás una lista de mis productos y servicios.</p>
+  <div class="product" onclick="showProductDetails('imagenes/diseño.jpg', 'Diseñamos tu Software', '¡La fórmula para impulsar tu éxito digital!', '2 semana', 'Asistencia técnica incluida', 'Licencias de logos y diseños', '$500', 'Mercado Pago, Patacones ')">
+    <img src="imagenes/diseño.jpg" alt="Producto 1">
+    <h3>Diseño de Software</h3>
+    <p>¡La fórmula para impulsar tu éxito digital!</p>
+  </div>
+  <div class="product" onclick="showProductDetails('imagenes/desarrollo.jpg', 'Desarrollamos tu App', '¡Innovación a tu alcance con nuestro diseño de software de vanguardia!', '5 semanas', 'Soporte 24/7', 'Licencia perpetua', '$800', 'Australes, Transferencia bancaria')">
+    <img src="imagenes/desarrollo.jpg" alt="Producto 2">
+    <h3>Desarrollo de Software</h3>
+    <p>¡Innovación a tu alcance con nuestro diseño <br> de software de vanguardia!</p>
+  </div>
+  <div class="product" onclick="showProductDetails('imagenes/reparacion.png', 'Mantenimiento y Soporte', 'Asegurando la excelencia continua con nuestra experiencia en diseño y desarrollo de software', 'Varíable', 'Asistencia remota ', 'Suscripción mensual', '$100/mes', 'PayPal, Débito automático')">
+    <img src="imagenes/reparacion.png" alt="Producto 3">
+    <h3>Mantenimiento y Soporte</h3>
+    <p>Asegurando la excelencia continua con nuestra <br> experiencia en diseño y desarrollo de software</p>
+  </div>
+</section>
+
+<footer>
+  <h6>&copy; 2024 Portfolio de Vc</h6>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
